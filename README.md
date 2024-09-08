@@ -1,10 +1,11 @@
-# Friendly Snippets
+## Snippets
 
-Snippets collection for a set of different programming languages.
+Started as a
 
-The only goal is to have one community driven repository for all kinds of
-snippets in all programming languages, this way you can have it all in one
-place.
+Fork of friendly snippets which can be found here
+[friendly-snippets](https://github.com/coryleeio/snippets)
+
+This repo contains my current snippets for a variety of programming languages and any additions, changes, or removals from those sets to fit my preferences from that set
 
 ## Install
 
@@ -13,7 +14,7 @@ Use your plugin manager of choice, e.g.
 ### With Lazy.nvim
 
 ```lua
-{ "rafamadriz/friendly-snippets" }
+{ "coryleeio/snippets" }
 ```
 
 > [!WARNING]
@@ -26,26 +27,26 @@ Use your plugin manager of choice, e.g.
 > ```lua
 > {
 >   "L3MON4D3/LuaSnip",
->   dependencies = { "rafamadriz/friendly-snippets" },
+>   dependencies = { "coryleeio/snippets" },
 > }
 > ```
 
 ### With Packer
 
 ```lua
-use "rafamadriz/friendly-snippets"
+use "coryleeio/snippets"
 ```
 
 ### With vim-plug
 
 ```vim
-Plug "rafamadriz/friendly-snippets"
+Plug "coryleeio/snippets"
 ```
 
 ### With coc.nvim
 
 ```vim
-:CocInstall https://github.com/rafamadriz/friendly-snippets@main
+:CocInstall https://github.com/coryleeio/snippets@main
 ```
 
 ## Usage
@@ -64,7 +65,7 @@ loading vscode snippets. Like for example:
 
 There's extra snippets included in this repo but they are not added by default,
 since it would be irrelevant for people not using those frameworks. See
-[`snippets/frameworks`](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets/frameworks)
+[`snippets/frameworks`](https://github.com/coryleeio/snippets/tree/main/snippets/frameworks)
 
 For example: if you want to add rails snippets to ruby.
 
@@ -93,42 +94,3 @@ require("luasnip.loaders.from_vscode").load {
     exclude = { "javascript" },
 }
 ```
-
-## Showcase
-
-### HTML
-
-![HTML gif](https://user-images.githubusercontent.com/67771985/131255337-d53f3408-b60d-44a2-93ba-9a3240a7436e.gif)
-
-### JS
-
-![JS gif](https://user-images.githubusercontent.com/67771985/131255342-e393165a-e4b1-401e-9084-a782b9dd3fef.gif)
-
-## TODO
-
-- Add all included snippets to the
-  [Wiki](https://github.com/rafamadriz/friendly-snippets/wiki).
-
-## Thanks to all contributors
-
-<a href="https://github.com/rafamadriz/friendly-snippets/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rafamadriz/friendly-snippets" />
-</a>
-
-## Credits
-
-A good portion of the snippets have been forked from the following repositories:
-
-- [vscode-standardjs-snippets](https://github.com/capaj/vscode-standardjs-snippets)
-- [python-snippets](https://github.com/cstrap/python-snippets)
-- [vs-snippets](https://github.com/kitagry/vs-snippets)
-- [Wscats/html-snippets](https://github.com/Wscats/html-snippets)
-- [Harry-Ross/vscode-c-snippets](https://github.com/Harry-Ross/vscode-c-snippets)
-- [vscode-jekyll-snippets](https://github.com/edheltzel/vscode-jekyll-snippets)
-- [vscode-fortran-support](https://github.com/krvajal/vscode-fortran-support)
-- [vscode_cobol](https://github.com/spgennard/vscode_cobol)
-- [VSCode-LaTeX-Snippets](https://github.com/JeffersonQin/VSCode-LaTeX-Snippets)
-- [vscode-react-javascript-snippets](https://github.com/dsznajder/vscode-react-javascript-snippets)
-- [honza/vim-snippets - Verilog](https://github.com/honza/vim-snippets/blob/master/snippets/verilog.snippets)
-- [vscode-relm4-snippets](https://github.com/Relm4/vscode-relm4-snippets)
-- And more...
