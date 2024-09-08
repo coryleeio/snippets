@@ -30,7 +30,7 @@
         "description": "Create magic method"
     },
     "if __name__ == __main__": {
-        "prefix": "ifmain",
+        "prefix": "main",
         "body": ["if __name__ == \"__main__\":", "\t${1:main()}"],
         "description": "Execute code if the file is executed directly"
     },
